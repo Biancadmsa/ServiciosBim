@@ -14,7 +14,7 @@ app.use(express.json());
 
 // Ruta para servir archivos estáticos
 const __dirname = dirname(fileURLToPath(import.meta.url));
-// app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 
 // Ruta para servir el archivo index.html
