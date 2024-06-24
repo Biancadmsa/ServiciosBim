@@ -204,15 +204,18 @@ display: flex;
 align-items: center;
 justify-content: space-evenly;
 }
-
-footer .footertext{
-font-size: 25px;
-font-family: "Cabin",sans-serif;
-font-weight:500;
-padding-top: 1rem;
-justify-content: center;
-vertical-align: middle;
+footer .footertext {
+  font-size: 20px;
+  font-family: "Cabin", sans-serif;
+  font-weight: 500;
+  padding-top: 1rem;
+  text-align: center; /* Alinear texto horizontalmente */
+  display: flex; /* Convertir en contenedor flex */
+  justify-content: center; /* Alinear horizontalmente */
+  align-items: center; /* Alinear verticalmente */
+  height: 100%; /* Asegurar que el contenedor tenga altura */
 }
+
 
 
 
