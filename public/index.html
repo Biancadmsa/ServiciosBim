@@ -2,104 +2,154 @@
 
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Desafío Latam" />
+    <meta name="description" content="Prueba Viajes de Chile" />
+    <meta name="keywords" content="Html,css,Bootstrap,Git y Github" />
+    <link rel="shortcut icon" type="image/png" href="./favicon/favicon1.jpg"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lobster&display=swap" rel="stylesheet"/>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Desafío Latam" />
-  <meta name="description" content="Servicios Bim" />
-  <meta name="keywords" content="Html,css,Bootstrap,Git y Github" />
-  <link rel="shortcut icon" type="image/png" href="./assets/favicon/favicon2.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lobster&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="/style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <script src="https://kit.fontawesome.com/434a4e2101.js" crossorigin="anonymous"></script>
-  <title>Servicios de Tecnología BIM</title>
-</head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/434a4e2101.js" crossorigin="anonymous"></script>
 
-<body>
-  <!-- Navbar -->
+    <link rel="stylesheet" href="/style.css" />
+    <title>Servicios de Tecnología BIM</title>
+  </head>
 
-  <nav id="menuNav" class="navbar navbar-dark navbar-expand-lg fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="/img/logo.png" id="Logo" width="55" height="45" />
-        <strong class="Textobim">Servicios BIM</strong>
-      </a>
-   
-  
- 
-      <button class="navbar-toggler toogler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item active">
-            <a class="nav-link active text-light me-3" aria-current="page" href="#header" id="inicio">Bienvenida</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-light me-3" href="#quienesSomos" id="QuienesSomos">Mi carrera</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-light me-3" href="#destacados" id="Destacados">Proyectos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-light me-3" href="#formularioSection" id="Contacto">Contacto</a>
-          </li>
-        </ul>
+  <body>
+    <!-- Navbar -->
+
+    <nav id="menuNav" class="navbar navbar-dark navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="/img/logo.png" id="Logo" width="55" height="45" />
+          <strong class="Textobim">Servicios BIM</strong>
+        </a>
+
+        <button
+          class="navbar-toggler toogler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a
+                class="nav-link active text-light me-3"
+                aria-current="page"
+                href="#header"
+                id="inicio"
+                >Bienvenida</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active text-light me-3"
+                href="#quienesSomos"
+                id="QuienesSomos"
+                >Quienes Somos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active text-light me-3"
+                href="#destacados"
+                id="Destacados"
+                >Proyectos Destacados</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active text-light me-3"
+                href="#formularioSection"
+                id="Contacto"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-
-<!-- Carrousel--> 
- <header id="header"> 
-  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel"> 
-    <div class="carousel-inner">
-       <div class="carousel-item active"> 
-        <img src="/img/carr2.jpg" class="d-block w-100" alt="Carousel1" /> 
+    <!-- Carrousel-->
+    <header id="header">
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/img/carr2.jpg" class="d-block w-100" alt="Carousel1" />
+          </div>
+          <div class="carousel-item">
+            <img src="/img/carr1.jpg" class="d-block w-100" alt="Carousel2" />
+          </div>
+          <div class="carousel-item">
+            <img src="/img/carr3.png" class="d-block w-100" alt="Carousel3" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-       <div class="carousel-item"> 
-        <img src="/img/carr1.jpg" class="d-block w-100" alt="Carousel2" /> 
-      </div> 
-      <div class="carousel-item"> <img src="/img/carr3.png" class="d-block w-100" alt="Carousel3" /> 
-      </div> 
-    </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-  data-bs-slide="prev">
-  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Previous</span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-  data-bs-slide="next">
-  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Next</span>
-</button>
-  </div> 
-</header>
-  <a id="whatsapp-chile" class="to-whatsapp" target="_blank" href="https://wa.me/+56992177411?text=Hola%20Humberto%2C%20quiero%20información%20acerca%20de%20tus%20servicios%20de%20BIM"> 
-    <img class="img-fluid" src="/img/what.png" style="width:60px;height:60px;" title="Quiero más información" alt="WhatsApp"> </a>
-  
-  <!-- Quienes somos y Párrafos--> 
-   <div class="container-fluid principal" id="quienesSomos">
-     <div class="container contenido"> 
-      <section id="contenidoQuienesSomos d-none d-md-block"> 
-        <h1 class="display-4 fw-bold pt-5 text-center d-none d-md-block">¿QUIENES SOMOS?</h1>
-         <hr class="myhr"> 
-         <div class="row mt-5">
-           <div class="col-12 col-md-4 d-none d-md-block">
-             <div class="bg-secondary"> 
-              <i class="fa-solid fa-helmet-safety fa-2x my-1 p-1"></i>
-            </div>
+    </header>
+    <a
+      id="whatsapp-chile"
+      class="to-whatsapp"
+      target="_blank"
+      href="https://wa.me/+56992177411?text=Hola%20Humberto%2C%20quiero%20información%20acerca%20de%20tus%20servicios%20de%20BIM"
+    >
+      <img
+        class="img-fluid"
+        src="/img/what.png"
+        style="width: 60px; height: 60px"
+        title="Quiero más información"
+        alt="WhatsApp"
+      />
+    </a>
+
+    <!-- Quienes somos y Párrafos-->
+    <div class="container-fluid principal" id="quienesSomos">
+      <div class="container contenido">
+        <section id="contenidoQuienesSomos d-none d-md-block">
+          <h1 class="display-4 fw-bold pt-5 text-center d-none d-md-block">
+            ¿QUIENES SOMOS?
+          </h1>
+          <hr class="myhr" />
+          <div class="row mt-5">
+            <div class="col-12 col-md-4 d-none d-md-block">
+              <div class="bg-secondary">
+                <i class="fa-solid fa-helmet-safety fa-2x my-1 p-1"></i>
+              </div>
               <p class="my-2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.Y Etiam
                 a mauris id purus blandit dapibus. Nunc at enim et lacus
@@ -111,8 +161,7 @@
               </p>
             </div>
 
-              <div class="col-12 col-md-4 d-none d-md-block parrafo">
-             
+            <div class="col-12 col-md-4 d-none d-md-block parrafo">
               <p class="my-2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.Y Etiam
                 a mauris id purus blandit dapibus. Nunc at enim et lacus
@@ -130,7 +179,7 @@
               <div class="bg-secondary">
                 <i class="fa-solid fa-hammer fa-2x my-1 p-1"></i>
               </div>
-        
+
               <p class="my-2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.Y Etiam
                 a mauris id purus blandit dapibus. Nunc at enim et lacus
@@ -143,13 +192,13 @@
             </div>
           </div>
         </section>
-        
+
         <!-- Destacados y Cards --->
         <section id="destacados">
           <h2 class="display-4 fw-bold text-center mt-5">DESTACADOS</h2>
           <hr />
           <div class="card-group mb-5 mt-5">
-            <div class="card  me-3">
+            <div class="card me-3">
               <img src="/img/card1.jpg" alt="Card" />
               <div class="card-body bg-secondary">
                 <h2 class="card-title text-black">Villarica</h2>
@@ -161,7 +210,7 @@
                 </p>
               </div>
             </div>
-        
+
             <div class="card me-3 card1">
               <img src="/img/card2.jpg" alt="Card" />
               <div class="card-body bg-secondary">
@@ -174,7 +223,7 @@
                 </p>
               </div>
             </div>
-        
+
             <div class="card me-3">
               <img src="/img/card5.jpg" alt="Card" />
               <div class="card-body bg-secondary">
@@ -186,7 +235,7 @@
                 </p>
               </div>
             </div>
-        
+
             <div class="card me-3">
               <img src="/img/card3.jpg" alt="Card" />
               <div class="card-body bg-secondary">
@@ -200,96 +249,215 @@
             </div>
           </div>
         </section>
-        
+
         <section id="formularioSection">
           <div class="container-fluid">
             <div class="container contenido">
-              <form id="contactForm" method="post" class="row g-3">
-                <h3 class="display-4 fw-bold text-center mt-5">Formulario de contacto</h3>
+              <form id="contactForm" method="post" action="/enviar-correo" class="row g-3">
+                <h3 class="display-4 fw-bold text-center mt-5">
+                  Formulario de contacto
+                </h3>
                 <hr />
                 <div class="col-md-6">
                   <label for="text_id" class="form-label">Nombre</label>
-                  <input type="text" class="form-control" id="text_id" aria-describedby="nombreHelp"
-                    pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ ]{3,50}" required />
-                  <small id="nombreHelp" class="form-text text-muted">Mínimo 3 caracteres, solo letras y espacios.</small>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="text_id"
+                    aria-describedby="nombreHelp"
+                    pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ ]{3,50}"
+                    required
+                  />
+                  <small id="nombreHelp" class="form-text text-muted"
+                    >Mínimo 3 caracteres, solo letras y espacios.</small
+                  >
                 </div>
                 <div class="col-md-6">
                   <label for="email_id" class="form-label">Correo</label>
-                  <input type="email" class="form-control" id="email_id" required />
-                  <small id="correoHelp" class="form-text text-muted">Ingrese un correo electrónico válido.</small>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email_id"
+                    required
+                  />
+                  <small id="correoHelp" class="form-text text-muted"
+                    >Ingrese un correo electrónico válido.</small
+                  >
                 </div>
+                <div
+                  id="mensajeExito"
+                  class="alert alert-success mt-1 d-none"
+                  role="alert"
+                >
+                  ¡Mensaje enviado correctamente 😎!
+                </div>
+                <div
+                  id="mensajeError"
+                  class="alert alert-danger mt-1 d-none"
+                  role="alert"
+                >
+                  Error al enviar el Mensaje 😢!.
+                </div>
+
                 <div class="col-12">
-                  <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required></textarea>
-                  <small id="mensajeHelp" class="form-text text-muted">Mínimo 10 caracteres, máximo 500 caracteres.</small>
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >Mensaje</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="5"
+                    required
+                  ></textarea>
+                  <small id="mensajeHelp" class="form-text text-muted"
+                    >Mínimo 10 caracteres, máximo 500 caracteres.</small
+                  >
                 </div>
                 <div class="col-12 text-center">
-                  <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+                  <button type="submit" class="btn btn-primary mb-3">
+                    Enviar
+                  </button>
                   <div id="mensaje-enviado"></div>
                 </div>
               </form>
-        
             </div>
           </div>
         </section>
-  
-</div> </div> <!--- Footer --> <div class="container-fluid footerdiv"> <footer> <p class="footertext">Humberto Figueroa, Building Information Modeling</p> <div class="iconos">
-        <a href="https://www.linkedin.com/in/humberto-figueroa-0a0972101/" target="_blank" data-bs-toggle="tooltip"
-        data-bs-placement="top" title="Visitar Linkedin">
-        <i class="fab fa-linkedin fa-2x my-1"></i>
-      </a>
-    
-      <a href="https://www.facebook.com/" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top"
-        title="Visitar Facebook">
-        <i class="fab fa-facebook fa-2x my-1"></i>
-      </a>
+      </div>
     </div>
-  
+    <!--- Footer -->
+    <div class="container-fluid footerdiv">
+      <footer>
+        <p class="footertext">
+          Humberto Figueroa, Building Information Modeling
+        </p>
+        <div class="iconos">
+          <a
+            href="https://www.linkedin.com/in/humberto-figueroa-0a0972101/"
+            target="_blank"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            title="Visitar Linkedin"
+          >
+            <i class="fab fa-linkedin fa-2x my-1"></i>
+          </a>
 
-</footer> 
-</div> <div id="mensajeExito" class="alert alert-success mt-3 d-none" role="alert"> ¡Correo electrónico enviado correctamente! </div> <div id="mensajeError" class="alert alert-danger mt-3 d-none" role="alert"> Error al enviar el correo electrónico. 
-  </div> 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            title="Visitar Facebook"
+          >
+            <i class="fab fa-facebook fa-2x my-1"></i>
+          </a>
+        </div>
+      </footer>
+    </div>
+    <div id="mensajeExito" class="alert alert-success mt-3 d-none" role="alert">
+      ¡Correo electrónico enviado correctamente!
+    </div>
+    <div id="mensajeError" class="alert alert-danger mt-3 d-none" role="alert">
+      Error al enviar el correo electrónico.
+    </div>
 
-  </script> 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBogGzZz+U6p5vvN1H8aI6bAJB1sz44y1J7UExoDyU7Mc7z/" crossorigin="anonymous"> 
-
-  </script> 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-ho+pP7rHkEIKe+1RHnESFI3cz7PbbXf5ZTZXbuF5ai83b8FPOvlr5PxTRF0i2Hcp" crossorigin="anonymous"> 
-
-  </script> <script src="https://kit.fontawesome.com/434a4e2101.js" crossorigin="anonymous">
-
-  </script> 
-
-  <script> $(document).ready(function () {
-     $('#contactForm').on('submit', function (e) {
-       e.preventDefault();
-        var nombre = $('#text_id').val();
-         var email = $('#email_id').val();
-          var mensaje = $('#exampleFormControlTextarea1').val();
-        $.ajax({
-    type: 'POST',
-    url: '/enviar-correo',
-    data: JSON.stringify(
-      { 
-      nombre: nombre,
-       email: email,
-        mensaje: mensaje }),
-    contentType: 'application/json',
-    success: function (response) {
-      $('#mensajeExito').removeClass('d-none').addClass('show');
-      $('#mensajeError').addClass('d-none').removeClass('show');
-    },
-    error: function (error) {
-      $('#mensajeError').removeClass('d-none').addClass('show');
-      $('#mensajeExito').addClass('d-none').removeClass('show');
-    }
-  });
-})
-    });
-    
-                   
-            
+    <!-- <script src="/script.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+    crossorigin="anonymous">
   </script>
-</body>
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/434a4e2101.js"
+      crossorigin="anonymous"
+    ></script>
+  
+    <script>
+
+      
+
+  // Activar tooltips de Bootstrap
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+  var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+  });
+
+  // Toggle para ocultar/mostrar texto en las cards
+  $('.card').click(function() {
+      $(this).find('.card-text').toggle();
+  });
+
+  // Animación de salto al pasar el mouse sobre los enlaces del navbar
+  $("#inicio, #QuienesSomos, #Destacados, #Contacto").hover(function() {
+      $(this).css("transform", "translateY(-10px)");
+  }, function() {
+      $(this).css("transform", "translateY(0)");
+  });
+
+  // Agregando sombra al texto del navbar al pasar el mouse
+  $("#inicio, #QuienesSomos, #Destacados, #Contacto").hover(function() {
+      $(this).css('text-shadow', '2px 2px 4px rgba(0, 0, 0, 0.6)');
+  }, function() {
+      $(this).css('text-shadow', 'none');
+  });
+
+  // Cambio de clase del navbar al hacer scroll
+  $(window).scroll(function() {
+      if ($(this).scrollTop() > 400) {
+          $("#menuNav").removeClass("navbar");
+          $('#menuNav').addClass("bg-interno");
+      } else {
+          $("#menuNav").removeClass("bg-interno");
+          $('#menuNav').addClass("navbar");
+      }
+  });
+
+  // Envío de formulario con AJAX// Envío de formulario con AJAX
+  $(document).ready(function () {
+  $('#contactForm').on('submit', function (e) {
+    e.preventDefault();
+    
+    var nombre = $('#text_id').val();
+    var email = $('#email_id').val();
+    var mensaje = $('#exampleFormControlTextarea1').val();
+    
+    fetch('/enviar-correo', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({ nombre: nombre, email: email, mensaje: mensaje })
+})
+.then(response => response.json())
+.then(data => {
+  $('#mensajeExito').removeClass('d-none').addClass('show');
+  $('#mensajeError').addClass('d-none').removeClass('show');
+
+  // Reset form fields
+  $('#text_id').val('');
+  $('#email_id').val('');
+  $('#exampleFormControlTextarea1').val('');
+
+  // Hide alert after 5 seconds
+  setTimeout(() => {
+    $('#mensajeExito').removeClass('show').addClass('d-none');
+  }, 3000);
+})
+.catch(error => {
+  $('#mensajeError').removeClass('d-none').addClass('show');
+  $('#mensajeExito').addClass('d-none').removeClass('show');
+});
+  });
+
+  
+});
+
+
+
+
+
+
+    </script>
+    </body>
 </html>

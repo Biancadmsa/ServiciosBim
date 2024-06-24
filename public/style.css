@@ -251,3 +251,21 @@ opacity: 0.9;}
 .footerdiv{
   background-color: rgb(66, 66, 66);
 }
+
+#mensajeExito, #mensajeError {
+  width: 50%; /* Ajusta el ancho según tus necesidades */
+  margin: 0 auto; /* Centra horizontalmente */
+  text-align: center; /* Centra el texto horizontalmente */
+  padding: 10px; /* Añade padding para separar el texto del borde */
+  box-sizing: border-box; /* Incluye padding en el ancho total */
+}
+
+#mensajeExito p, #mensajeError p {
+  margin: 0; /* Elimina el margen predeterminado del párrafo */
+}
+
+@media (max-width: 768px) {
+  #mensajeExito, #mensajeError {
+    width: 90%; /* Ancho ajustado para pantallas más pequeñas */
+  }
+}
