@@ -14,12 +14,16 @@ app.use(express.json());
 
 // Ruta para servir archivos estáticos
 const __dirname = dirname(fileURLToPath(import.meta.url));
-app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static(path.join(__dirname, 'public')));
 
 
 // Ruta para servir el archivo index.html
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+app.get('/style.css', (req, res) => {
+  res.sendFile(path.join(__dirname, 'style.css'));
 });
 // Configuración del transporte para enviar correos electrónicos con nodemailer
 const transporter = nodemailer.createTransport({
