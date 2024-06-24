@@ -1,0 +1,29 @@
+name: Deploy static content to GitHub Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches:
+      - main
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Optional: If your index.html is inside the 'public' directory
+      - name: Move index.html into root
+        run: mv public/index.html index.html
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./ # This should be the directory where index.html resides
+          publish_branch: gh-pages # Ensure this matches your GitHub Pages branch
+
