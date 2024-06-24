@@ -16,6 +16,11 @@ app.use(express.json());
 const __dirname = dirname(fileURLToPath(import.meta.url));
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+// Ruta para servir el archivo index.html
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
 // Configuración del transporte para enviar correos electrónicos con nodemailer
 const transporter = nodemailer.createTransport({
   service: 'Gmail',
