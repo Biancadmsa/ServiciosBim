@@ -4,7 +4,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 
-const port = 3001;
+const port = 3000;
 const app = express();
 
 app.use(express.json());
