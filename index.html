@@ -30,25 +30,31 @@
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="/img/logo.png" id="Logo" width="55" height="45" />
-          <strong class="Textobim">Servicios BIM</strong>
+          <strong class="Textobim fs-3">Servicios BIM</strong>
         </a>
 
         <button
           class="navbar-toggler toogler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item active">
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+          
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+       <div class="offcanvas-body" id="navbarNav">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3o">
+            <li class="nav-item ">
               <a
-                class="nav-link active text-light me-3"
+                class="nav-link active text-info me-3 fw-bold fs-3"
                 aria-current="page"
                 href="#header"
                 id="inicio"
@@ -57,7 +63,7 @@
             </li>
             <li class="nav-item">
               <a
-                class="nav-link active text-light me-3"
+                class="nav-link active text-info me-3 fw-bold fs-3"
                 href="#quienesSomos"
                 id="QuienesSomos"
                 >Quienes Somos</a
@@ -65,7 +71,7 @@
             </li>
             <li class="nav-item">
               <a
-                class="nav-link active text-light me-3"
+                class="nav-link active text-info me-3 fw-bold fs-3"
                 href="#destacados"
                 id="Destacados"
                 >Proyectos Destacados</a
@@ -73,7 +79,7 @@
             </li>
             <li class="nav-item">
               <a
-                class="nav-link active text-light me-3"
+                class="nav-link active text-info  me-3 fs-3"
                 href="#formularioSection"
                 id="Contacto"
                 >Contacto</a
@@ -122,20 +128,7 @@
         </button>
       </div>
     </header>
-    <a
-      id="whatsapp-chile"
-      class="to-whatsapp"
-      target="_blank"
-      href="https://wa.me/+56992177411?text=Hola%20Humberto%2C%20quiero%20información%20acerca%20de%20tus%20servicios%20de%20BIM"
-    >
-      <img
-        class="img-fluid"
-        src="/img/what.png"
-        style="width: 60px; height: 60px"
-        title="Quiero más información"
-        alt="WhatsApp"
-      />
-    </a>
+
 
     <!-- Quienes somos y Párrafos-->
     <div class="container-fluid principal" id="quienesSomos">
@@ -254,7 +247,20 @@
           <div class="container-fluid">
             <div class="container contenido">
               <form id="contactForm" method="post" action="/enviar-correo" class="row g-3">
-                <h3 class="display-4 fw-bold text-center mt-5">
+                <h3 class="display-4 fw-bold text-center mt-5">    <a
+                  id="whatsapp-chile"
+                  class="to-whatsapp"
+                  target="_blank"
+                  href="https://wa.me/+56992177411?text=Hola%20Humberto%2C%20quiero%20información%20acerca%20de%20tus%20servicios%20de%20BIM"
+                >
+                  <img
+                    class="img-fluid"
+                    src="/img/what.png"
+                    style="width: 60px; height: 60px"
+                    title="Quiero más información"
+                    alt="WhatsApp"
+                  />
+                </a>
                   Formulario de contacto
                 </h3>
                 <hr />
@@ -327,7 +333,7 @@
     <div class="container-fluid footerdiv">
       <footer>
         <p class="footertext">
-          © Humberto Figueroa. Information Modeling Building.
+          © Humberto Figueroa. Building Information Modeling.
         </p>
         <div class="iconos">
           <a

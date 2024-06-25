@@ -2,12 +2,7 @@
   color:#ffffff;
 }
 
-/* .navbar p{
-  font-size:25px;
-  font-family: "Roboto", sans-serif;
-  font-weight:500;
-  color:#0a0a0a;
-} */
+
 #menuNav {
   background-color: rgb(59, 61, 61);
   opacity: 0.6;
@@ -42,6 +37,7 @@ font-size:35px;
 font-family: "Cabin",sans-serif;
 font-weight:500;
 }
+
 .contenido h2{ 
 font-size:35px;
 font-family: "Cabin",sans-serif;
@@ -243,10 +239,11 @@ footer i{
 
 
 #whatsapp-chile {
-  position: fixed;
-  top: 15rem;
+  /* position: fixed;
+  top: 15rem; */
   left: 10px;
-opacity: 0.9;}
+opacity: 0.9;
+text-decoration: none;}
 
 .footerdiv{
   background-color: rgb(66, 66, 66);
@@ -271,6 +268,3 @@ opacity: 0.9;}
 }
 
 
-label{
-  font-size:22px;
-}
