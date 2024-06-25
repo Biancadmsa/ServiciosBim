@@ -269,3 +269,8 @@ opacity: 0.9;}
     width: 90%; /* Ancho ajustado para pantallas más pequeñas */
   }
 }
+
+
+label{
+  font-size:22px;
+}

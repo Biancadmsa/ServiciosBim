@@ -1,30 +1,47 @@
-// servidor.js
-
 import express from 'express';
 import nodemailer from 'nodemailer';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
+import bodyParser from 'body-parser'; // Importa body-parser
 
 const app = express();
 const port = 3000;
 
-// Middleware para procesar JSON
-app.use(express.json());
+// Middleware para procesar JSON y datos de formularios codificados
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
-// Ruta para servir archivos estáticos
-const __dirname = dirname(fileURLToPath(import.meta.url));
-app.use(express.static(path.join(__dirname, 'public')));
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
+// Configuración para servir archivos estáticos
+app.use('/favicon', express.static(path.join(__dirname, 'public', 'favicon')));
+app.use('/img', express.static(path.join(__dirname, 'public', 'img')));
+app.use('/style.css', express.static(path.join(__dirname, 'public', 'style.css')));
 
 // Ruta para servir el archivo index.html
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.get('/style.css', (req, res) => {
-  res.sendFile(path.join(__dirname, 'style.css'));
+// Ruta para manejar el envío del formulario de contacto
+app.post('/enviar-correo', (req, res) => {
+  const { nombre, email, mensaje } = req.body;
+
+  if (!nombre || !email || !mensaje) {
+    return res.status(400).json({ error: 'Por favor, complete todos los campos.' });
+  }
+
+  enviarCorreo(nombre, email, mensaje)
+    .then(() => {
+      res.status(200).json({ message: '¡Correo electrónico enviado correctamente!' });
+    })
+    .catch((error) => {
+      console.log(error);
+      res.status(500).json({ error: 'Error al enviar el correo electrónico.' });
+    });
 });
+
 // Configuración del transporte para enviar correos electrónicos con nodemailer
 const transporter = nodemailer.createTransport({
   service: 'Gmail',
@@ -47,24 +64,6 @@ const enviarCorreo = (nombre, email, mensaje) => {
 
   return transporter.sendMail(mailOptions);
 };
-
-// Ruta para manejar el envío del formulario de contacto
-app.post('/enviar-correo', (req, res) => {
-  const { nombre, email, mensaje } = req.body;
-
-  if (!nombre || !email || !mensaje) {
-    return res.status(400).json({ error: 'Por favor, complete todos los campos.' });
-  }
-
-  enviarCorreo(nombre, email, mensaje)
-    .then(() => {
-      res.status(200).json({ message: '¡Correo electrónico enviado correctamente!' });
-    })
-    .catch((error) => {
-      console.log(error);
-      res.status(500).json({ error: 'Error al enviar el correo electrónico.' });
-    });
-});
 
 // Servidor escuchando en el puerto 3000
 app.listen(port, () => {
