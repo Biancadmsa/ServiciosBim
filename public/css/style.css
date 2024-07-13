@@ -1,0 +1,253 @@
+body {
+  color: #ffffff;
+}
+
+#menuNav {
+  background-color: rgb(59, 61, 61);
+  opacity: 0.6;
+}
+
+.Textobim {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+#navbarNav ul li a {
+  color: #ffffff;
+  font-size: 16pt;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+/* --Quienes Somos-- */
+.principal {
+  background: #222121;
+}
+
+.contenido {
+  color: #ffffff;
+}
+
+.contenido h1 {
+  font-size: 35px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.contenido h2 {
+  font-size: 35px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.contenido p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+@media (max-width: 435px) {
+  .contenido h1 {
+    font-size: 23px;
+  }
+  .contenido p {
+    font-size: 13px;
+  }
+  .fa-solid {
+    color: #ffffff;
+    font-size: 22px;
+    width: 9px;
+    margin: 4px auto;
+    padding: 3px;
+  }
+}
+
+@media (max-width: 768px) {
+  .parrafo {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 769px) {
+  .myhr {
+    display: block;
+    margin-top: 0rem;
+  }
+  #destacados h2 {
+    margin-top: 0.5rem !important;
+  }
+}
+
+/* iconos */
+.contenido i {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+@media (max-width: 435px) {
+  #destacados h2 {
+    font-size: 23px;
+  }
+}
+
+.card h2 {
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  justify-content: center;
+  text-align: center;
+}
+
+.card p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.card {
+  flex: 1;
+  margin-right: 15px;
+}
+
+@media (max-width: 1196px) {
+  .card-group {
+    flex-direction: column;
+  }
+  .card-body h2 {
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 768px) {
+  #destacados .card-text {
+    font-size: 80%;
+    margin-top: 0px;
+    font-weight: 600;
+  }
+  .card-group {
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+}
+
+@media (max-width: 912px) {
+  #destacados .card-text {
+    font-size: 80%;
+    margin-top: 0px;
+    font-weight: 600;
+  }
+  .card-group {
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+}
+
+.card img {
+  height: 11rem;
+}
+
+/*----- Formulario -----*/
+.formulario {
+  background: #000000;
+}
+
+@media (max-width: 435px) {
+  #formularioSection h2 {
+    font-size: 23px;
+  }
+}
+
+#exampleFormControlTextarea1 {
+  height: 12rem;
+}
+
+label {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#buttonEnviar {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  width: 9rem;
+  margin-top: 15px;
+}
+
+/* -----Footer -----*/
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer .footertext {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  padding-top: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+footer i {
+  margin-left: 1rem;
+}
+
+.iconos a {
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+@media(max-width:435px) {
+  footer .footertext {
+    font-size: 18px;
+  }
+  .iconos i {
+    width: 1.3rem;
+    height: auto;
+    margin-left: 0.8rem;
+  }
+}
+
+#whatsapp-chile {
+  left: 10px;
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.footerdiv {
+  background-color: rgb(66, 66, 66);
+}
+
+#mensajeExito,
+#mensajeError {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#mensajeExito p,
+#mensajeError p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #mensajeExito,
+  #mensajeError {
+    width: 90%;
+  }
+}
