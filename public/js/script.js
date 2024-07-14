@@ -5,7 +5,7 @@ $(document).ready(function () {
     var email = $('#email_id').val();
     var mensaje = $('#exampleFormControlTextarea1').val();
 
-    fetch('https://formspree.io/f/{your_form_id}', {
+    fetch('https://formspree.io/f/xblrlyjw', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
