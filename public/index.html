@@ -141,7 +141,7 @@
         <section id="formularioSection">
           <div class="container-fluid">
             <div class="container contenido">
-              <form id="contactForm" method="post" action="/enviar-correo" class="row g-3">
+              <form id="contactForm" method="post" action="https://formspree.io/f/{your_form_id}" class="row g-3">
                 <h3 class="display-4 fw-bold text-center mt-5">
                   <a id="whatsapp-chile" class="to-whatsapp" target="_blank" href="https://wa.me/+56992177411?text=Hola%20Humberto%2C%20quiero%20información%20acerca%20de%20tus%20servicios%20de%20BIM">
                     <img class="img-fluid" src="/img/what.png" style="width: 60px; height: 60px" title="Quiero más información" alt="WhatsApp" />
@@ -151,19 +151,19 @@
                 <hr />
                 <div class="col-md-6">
                   <label for="text_id" class="form-label">Nombre</label>
-                  <input type="text" class="form-control" id="text_id" aria-describedby="nombreHelp" pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ ]{3,50}" required />
+                  <input type="text" class="form-control" id="text_id" name="nombre" aria-describedby="nombreHelp" pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ ]{3,50}" required />
                   <small id="nombreHelp" class="form-text text-info">Mínimo 3 caracteres, solo letras y espacios.</small>
                 </div>
                 <div class="col-md-6">
                   <label for="email_id" class="form-label">Correo</label>
-                  <input type="email" class="form-control" id="email_id" required />
+                  <input type="email" class="form-control" id="email_id" name="email" required />
                   <small id="correoHelp" class="form-text text-info">Ingrese un correo electrónico válido.</small>
                 </div>
                 <div id="mensajeExito" class="alert alert-success mt-1 d-none" role="alert">¡Mensaje enviado correctamente 😎!</div>
                 <div id="mensajeError" class="alert alert-danger mt-1 d-none" role="alert">Error al enviar el Mensaje 😢!</div>
                 <div class="col-12">
                   <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required></textarea>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" name="mensaje" rows="5" required></textarea>
                   <small id="mensajeHelp" class="form-text text-info">Mínimo 10 caracteres, máximo 500 caracteres.</small>
                 </div>
                 <div class="col-12 text-center">
