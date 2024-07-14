@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   color: #ffffff;
 }
@@ -5,6 +6,7 @@ body {
 #menuNav {
   background-color: rgb(59, 61, 61);
   opacity: 0.6;
+  width: 100%;
 }
 
 .Textobim {
@@ -88,12 +90,6 @@ body {
   display: flex;
 }
 
-@media (max-width: 435px) {
-  #destacados h2 {
-    font-size: 23px;
-  }
-}
-
 .card h2 {
   font-size: 25px;
   font-family: "Roboto", sans-serif;
@@ -114,14 +110,7 @@ body {
   margin-right: 15px;
 }
 
-@media (max-width: 1196px) {
-  .card-group {
-    flex-direction: column;
-  }
-  .card-body h2 {
-    font-weight: bold;
-  }
-}
+
 
 @media (max-width: 768px) {
   #destacados .card-text {
@@ -154,12 +143,6 @@ body {
 /*----- Formulario -----*/
 .formulario {
   background: #000000;
-}
-
-@media (max-width: 435px) {
-  #formularioSection h2 {
-    font-size: 23px;
-  }
 }
 
 #exampleFormControlTextarea1 {
@@ -210,14 +193,23 @@ footer i {
   text-decoration: none;
 }
 
-@media(max-width:435px) {
+@media (max-width: 435px) {
   footer .footertext {
     font-size: 18px;
   }
   .iconos i {
-    width: 1.3rem;
     height: auto;
-    margin-left: 0.8rem;
+    margin-right: 1.2rem;
+  }
+  .contenido h3 {
+    font-size: 20px;
+    justify-content: center;
+  }
+  #destacados {
+    margin-bottom: -60px;
+  }
+  #destacados .card {
+    margin-bottom: 30px;
   }
 }
 
@@ -250,4 +242,52 @@ footer i {
   #mensajeError {
     width: 90%;
   }
+}
+
+/* Navbar Styles for Mobile */
+.navbar-toggler {
+  position: absolute;
+  right: 10px;
+}
+
+.offcanvas.offcanvas-end {
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  
+  #destacados .card {
+    margin-bottom: 30px;
+  } 
+  .card {
+    margin-right: 10px;
+    margin-bottom: 20px;
+    height: 39rem;
+  }
+  .card img {
+    height: 22rem; /* Aumenta la altura de la imagen */
+  } 
+  .card-body {
+    padding: 1.5rem; 
+     height: 10rem;/* Aumenta el padding para más altura */
+  }
+  .card h2 {
+    font-size: 38px;
+  }
+  .card, p .card-text {
+    font-size: 20px;
+}
+  .card-group {
+    flex-direction: column;
+  }
+.card-body h2 {
+    font-weight: bold;
+
+}   #destacados {
+    margin-bottom: -80px;
+  }
+}
+
+.btn{
+  width: 250px;
 }
