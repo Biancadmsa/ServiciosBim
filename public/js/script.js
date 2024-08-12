@@ -30,3 +30,8 @@ $(document).ready(function () {
     });
   });
 });
+
+
+$('.card').click(function() {
+  $(this).closest('.card').find('.card-text').toggle();
+});
